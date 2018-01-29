@@ -10,6 +10,7 @@ export class AppComponent {
   title: any;
   // items: (string|number)[]=[];
   items: Character[] = [];
+  value:string;
   constructor() {
     this.title = 'Prima Angular App';
     this.items.push({type:'cattivo',name:'ursula',age:69});
@@ -17,4 +18,8 @@ export class AppComponent {
     this.items.push(new Character('buono','superman',12));
     this.items.push(new Character('cattivo'));
   }
+  showValue(){
+    alert('valore='+ this.value);
+    this.value='prova';
+}
 }
