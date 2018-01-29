@@ -4,11 +4,6 @@
         {{ title }}
     </h1>
 </div>
-<div *ngFor="let item of items; let i=index">
-    <div>tipo: {{item.type}}</div>
-    <div>nome: {{item.name}}</div>
-    <div>eta: {{item.age}}</div>
-    <div *ngIf="i!=items.length-1">-------------</div>
-</div>
+<list [items]="items"></list>
 <input [(ngModel)]="value" />
 <div (click)="showValue()" class="stupidClass">Mostra Valore</div>
