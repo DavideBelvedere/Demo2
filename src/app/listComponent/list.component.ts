@@ -9,5 +9,5 @@ import { Character } from '../character';
 export class ListComponent {
     @Input()
     items: Character[];
-    
+
 }
