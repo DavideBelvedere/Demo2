@@ -12,9 +12,9 @@ export class AppComponent {
   // items: (string|number)[]=[];
   items: Character[] = [];
   value: string;
-  constructor() {
+  constructor(private listService: ListService) {
     this.title = 'Prima Angular App';
-    let listService: ListService = new ListService();
+   
     this.items = listService.getCharacterList();
   }
   showValue() {
