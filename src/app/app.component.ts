@@ -21,8 +21,6 @@ export class AppComponent {
     alert('valore=' + this.value);
     this.value = 'prova';
   }
-  showCharacter(character: Character) {
-    this.characterSelected = character;
-  }
+ 
 
 }

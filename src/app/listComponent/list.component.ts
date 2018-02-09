@@ -1,5 +1,6 @@
 import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { Character } from '../character';
+import { CommunicatorService } from '../communicator.service';
 
 
 
@@ -10,10 +11,9 @@ import { Character } from '../character';
 export class ListComponent {
     @Input()
     items: Character[];// questo è collegato all'attributo items di list inappcomponent.html
-    @Output()
-    selectedItem: EventEmitter<Character> = new EventEmitter<Character>();
+   // @Output()
 
-    constructor(){
+    constructor(private communicatorService: CommunicatorService){
     
     }
 
@@ -21,6 +21,7 @@ export class ListComponent {
         this.items.push(new Character());
     }
     showData(item: Character) {
-        this.selectedItem.emit(item);
+       //chiamo il next nel subject
+       this.communicatorService.changeSubject(item);
     }
 }

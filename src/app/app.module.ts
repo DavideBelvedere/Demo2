@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './listComponent/list.component';
 import { ListService } from './list.service';
 import { DetailComponent } from './detail/detail.component';
+import { CommunicatorService } from './communicator.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { DetailComponent } from './detail/detail.component';
     FormsModule
     
   ],
-  providers: [ListService],
+  providers: [ListService, CommunicatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
