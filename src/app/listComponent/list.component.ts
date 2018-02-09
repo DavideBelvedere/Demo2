@@ -9,9 +9,17 @@ import { Character } from '../character';
 })
 export class ListComponent {
     @Input()
-    items: Character[];
+    items: Character[];// questo è collegato all'attributo items di list inappcomponent.html
     @Output()
     selectedItem: EventEmitter<Character> = new EventEmitter<Character>();
+
+    constructor(){
+    
+    }
+
+    ngOnInit(){ //sul costruttore queste cose non vanno perchè gli input gli prende dopo
+        this.items.push(new Character());
+    }
     showData(item: Character) {
         this.selectedItem.emit(item);
     }

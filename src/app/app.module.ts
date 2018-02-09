@@ -5,12 +5,14 @@ import{ FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ListComponent } from './listComponent/list.component';
 import { ListService } from './list.service';
+import { DetailComponent } from './detail/detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
