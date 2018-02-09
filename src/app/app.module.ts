@@ -7,13 +7,15 @@ import { ListComponent } from './listComponent/list.component';
 import { ListService } from './list.service';
 import { DetailComponent } from './detail/detail.component';
 import { CommunicatorService } from './communicator.service';
+import { AfterViewComponent } from './after-view/after-view.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    DetailComponent
+    DetailComponent,
+    AfterViewComponent
   ],
   imports: [
     BrowserModule,
