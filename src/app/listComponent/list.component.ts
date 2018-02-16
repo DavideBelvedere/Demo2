@@ -10,7 +10,7 @@ import { CommunicatorService } from '../communicator.service';
 })
 export class ListComponent {
     @Input()
-    items: Character[];// questo è collegato all'attributo items di list inappcomponent.html
+    items: Character[];// questo è collegato all'attributo items di list in appcomponent.html
    // @Output()
 
     constructor(private communicatorService: CommunicatorService){
