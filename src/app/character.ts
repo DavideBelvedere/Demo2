@@ -7,7 +7,7 @@ export class Character {
         this.type = type;
         this.name = name;
         this.age = age;
-this.id=id;
+        this.id = id;
     }
 
 }

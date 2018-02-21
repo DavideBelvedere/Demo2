@@ -5,4 +5,10 @@
 .header>div {
     display: inline-block;
     cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header {
+    margin-bottom: 20px;
 }

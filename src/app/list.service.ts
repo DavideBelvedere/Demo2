@@ -6,10 +6,12 @@ export class ListService {
         new Character(2,'buono', 'superman', 12),
         new Character(3,'cattivo')
     ];
+    
     getCharacterList(): Character[] {
         
         return this.items;
     }
+
     getCharacterById(id:number): Character{
         for(let character of this.items){
             if(character.id==id){

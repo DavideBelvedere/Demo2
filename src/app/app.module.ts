@@ -11,6 +11,8 @@ import { AfterViewComponent } from './after-view/after-view.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { DemoRouterModule } from './router/router.module';
+import { EditComponent } from './edit/edit.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DemoRouterModule } from './router/router.module';
     DetailComponent,
     AfterViewComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    EditComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
