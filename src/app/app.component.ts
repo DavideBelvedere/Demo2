@@ -9,18 +9,7 @@ import { AfterViewComponent } from './after-view/after-view.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: any;
-  // items: (string|number)[]=[];
-  items: Character[] = [];
-  value: string;
-  characterSelected: Character;
+ constructor(){
 
-  constructor(private listService: ListService) {
-    this.title = 'Prima Angular App';
-    this.items = listService.getCharacterList();
-  }
-  
-  showValue() {
-    alert("valore " + this.value);
-  }
+ }
 }
