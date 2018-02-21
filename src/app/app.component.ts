@@ -9,27 +9,5 @@ import { AfterViewComponent } from './after-view/after-view.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: any;
-  // items: (string|number)[]=[];
-  items: Character[] = [];
-  value: string;
-  characterSelected: Character;
-  @ViewChild(AfterViewComponent) viewChild: AfterViewComponent;
-  constructor(private listService: ListService) {
-    this.title = 'Prima Angular App';
-    this.items = listService.getCharacterList();
-  }
-  ngAfterViewInit() {
-    this.value = this.viewChild.valueAfterView;
-
-  }
-  ngAfterViewChecked() {
-    this.value = this.viewChild.valueAfterView;
-    
-  }
-
-
-  showValue() {
-    alert("valore " + this.value);
-  }
+  
 }

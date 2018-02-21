@@ -9,7 +9,8 @@ import { DetailComponent } from './detail/detail.component';
 import { CommunicatorService } from './communicator.service';
 import { AfterViewComponent } from './after-view/after-view.component';
 import { HeaderComponent } from './header/header.component';
-
+import { HomeComponent } from './home/home.component';
+import { DemoRouterModule } from './router/router.module';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,13 @@ import { HeaderComponent } from './header/header.component';
     ListComponent,
     DetailComponent,
     AfterViewComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    DemoRouterModule
     
   ],
   providers: [ListService, CommunicatorService],
